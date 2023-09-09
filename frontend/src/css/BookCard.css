@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.allsearch {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  grid-gap: 1rem; 
+  max-height: 90vh;
+}
+
+
+.book-container-search {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 4rem; 
+  justify-content: space-between;
+}
+
+.books-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  justify-content: space-between;
+  max-height: 90vh;
+}
+
+.book-card {
+  max-width: 300px;
+  height: 300px;
+  border: 1px solid #312f2f;
+  margin-bottom: 3rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px #2cbb3f;
+}
+
+.book-card:hover .book-content {
+  transform: rotateY(180deg);
+}
+
+.book-content {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.book-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.book-front, .book-back {
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.book-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2cbb3f;
+  color: white;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-title{
+  display: flex;
+  justify-content:space-around;
+}
+
+.book-link{
+  border: 1px solid #312f2f;
+  width: 15rem;
+  border-radius: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+.book-link:hover{
+  background-color: gainsboro;
+}
+
+.book-price{
+  background-color: #2cbb3f;
+  color: white;
+  border-radius:  30px;
+  padding: 10px;
+  margin-left: 0;
+} 
+
+.btn-main, .btn-bucket, .btn-logout, .btn-update, .btn-delete, .btn-order{
+  border-radius: 30px;
+  background-color: #2cbb3f;
+  color: white;
+  font-size: 15px;
+  max-height: 4rem;
+  border: 0px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.btn-update, .btn-delete, .btn-order{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-delete{
+  background-color: rgb(194, 8, 8);
+}
+
+.btn-order{
+  font-size: 1.5rem;
+}
+
+.btn-main:hover, .btn-bucket:hover, .btn-logout:hover, .btn-update:hover, .btn-delete:hover, .btn-order:hover{
+  background-color: gainsboro;
+  transition: background-color 0.3s;
+  color: black;
+  transition: color 0.3s;
+}
+
+.btn-delete:hover{
+  background-color: rgb(139, 5, 5);
+  color: white;
+}
+
+.book-info{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.order-buttons{
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+  padding-left: 8rem;
+}
+/*
+
+.order-buttons{
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+  padding-left: 8rem;
+}
+*/

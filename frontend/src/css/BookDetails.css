@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem;
+  max-height: 90vh;
+}
+
+.book {
+  width: 600px;
+  padding: 1rem;
+  border: 1px solid #312f2f;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.book img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.book h2 {
+  font-size: 2rem;
+}
+
+.book p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.book span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+textarea {
+  width: 80%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #312f2f;
+  resize: vertical;
+  border-radius: 5px;
+}
+
+input[type="range"] {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.btn-review {
+  border-radius: 30px;
+  background-color: #2cbb3f;
+  color: white;
+  font-size: 15px;
+  max-height: 4rem;
+  border: 0px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-review:hover{
+  background-color: gainsboro;
+  transition: background-color 0.3s;
+  color: black;
+  transition: color 0.3s;
+}
+
+.reviews {
+  width: 100%; 
+  margin: 1rem;
+  border: 1px solid #312f2f;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+td>h2{
+  text-align: left;
+  padding-left: 20px;
+}
+
+td>p{
+  text-align: left;
+  padding-left: 20px;
+}
+
+td>span{
+  text-align: right;
+  padding: 0px;
+  font-weight: bold;
+}
